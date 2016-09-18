@@ -13,20 +13,21 @@
   </head>
   <body>
     <header class="page-header">
+     <div class="header-row-1">
       <div class="container">
-        <div class="header-row-1">
-          <h1 class="page-title">
-            <a href="#" class="index-link">Техномарт</a>
-          </h1>
-          <form class="search-form" action="#" method="get">
-            <input class="search-btn ico-search" type="submit">
-            <input  class="search-input" type="search" value="Поиск: ">
-          </form>
-          <a href="bookmarks.html" class="user-bookmarks ico-book">Закладки: <span class="bookmarks-value">0</span></a>
-          <a href="basket.html" class="user-basket ico-basket">Корзина: <span class="basket-value">0</span></a>
-          <a href="order.html" class="user-order-btn">Оформить заказ</a>
-        </div>
+        <h1 class="page-title">
+          <a href="#" class="index-link">Техномарт</a>
+        </h1>
+        <form class="search-form" action="#" method="get">
+          <input class="search-btn ico-search" type="submit">
+          <input  class="search-input" type="search" value="Поиск: ">
+        </form>
+        <a href="bookmarks.html" class="user-bookmarks ico-book">Закладки: <span class="bookmarks-value">0</span></a>
+        <a href="basket.html" class="user-basket ico-basket">Корзина: <span class="basket-value">0</span></a>
+        <a href="order.html" class="user-order-btn">Оформить заказ</a>
       </div>
+     </div>
+     <div class="container">
       <div class="header-row-2">
         <h2 class="shop-title">Интернет-магазин строительных материалов и инструментов для ремонта</h2>
         <div class="shop-contact">
@@ -37,13 +38,18 @@
           <a href="#" class="login ico-login">Войти</a>
           <a href="#" class="register ico-register">Регистрация</a>
         </div>
+        <div class="shop-logged" style="display: none;">
+          <a href="#" class="login ico-login logged">Равшан Джамшутович</a>
+          <a href="#" class="order">Мои заказы</a>
+          <a href="#" class="account">Личный кабинет</a>
+        </div>
       </div>
       <div class="header-row-3">
         <nav class="header-menu">
           <ul>
             <li><a href="#">Главная</a></li>
             <li><a href="#">Компания</a></li>
-            <li><a href="#">Каталог</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
             <li><a href="#">Новости</a></li>
             <li><a href="#">Спецпредложения</a></li>
             <li><a href="#">Доставка</a></li>
@@ -51,6 +57,7 @@
           </ul>
         </nav>
       </div>
+     </div>
     </header>
     <main class="container">
       <section class="page-content">
@@ -79,7 +86,7 @@
                 Перфораторы
               </h3>
               <p class="slide-desc">Настоящие мужские игрушки</p>
-              <a href="#" class="slide-btn">Открыть каталог</a>
+              <a href="#" class="link slide-btn">Открыть каталог</a>
             </div>
             <div class="slide">
               <h3 class="slide-title">
@@ -277,7 +284,7 @@
       </div>
       <div class="feedback">
         <p class="feedback-text">Обратная связь:<a href="mailto:mail@htmlacademy.ru" class="feedback-link">mail@htmlacademy.ru</a></p>
-        <p class="feedback-text">Разработано - <a href="https://htmlacademy.ru" class="feedback-link"></a>htmlacademy.ru</p>
+        <p class="feedback-text">Разработано - <a href="https://htmlacademy.ru" class="feedback-link">htmlacademy.ru</a></p>
       </div>
     </footer>
   </body>
