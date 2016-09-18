@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Техномарт</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container">
+        <div class="header-row-1">
+          <div class="page-title">
+            <a href="#" class="index-link">Техномарт</a>
+          </div>
+          <form class="search-form" action="#" method="get">
+            <input class="search-btn ico-search" type="submit">
+            <input  class="search-input" type="search" value="Поиск: ">
+          </form>
+          <a href="bookmarks.html" class="user-bookmarks ico-book">Закладки: <span class="bookmarks-value">0</span></a>
+          <a href="basket.html" class="user-basket ico-basket added">Корзина: <span class="basket-value">0</span></a>
+          <a href="order.html" class="user-order-btn">Оформить заказ</a>
+        </div>
+      </div>
+      <div class="header-row-2">
+        <h2 class="shop-title">Интернет-магазин строительных материалов и инструментов для ремонта</h2>
+        <div class="shop-contact">
+          <a href="tel:812 555 05 05" class="contact-phone ico-phone">+7 (812)555-05-05</a>
+          <p class="contact-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        </div>
+        <div class="shop-login">
+          <a href="#" class="login ico-login logged">Равшан Джамшутович</a>
+          <a href="#" class="order">Мои заказы</a>
+          <a href="#" class="account">Личный кабинет</a>
+        </div>
+      </div>
+      <div class="header-row-3">
+        <nav class="header-menu">
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Компания</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Спецпредложения</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <nav class="breadcrumb">
+        <a href="#" class="link-home">Главная</a>
+        <a href="">Каталог</a>
+        <a href="">Инструменты</a>
+        <a href="">Перфораторы</a>
+      </nav>
+      <section class="page-content">
+        <h1 class="content-title">Перфораторы</h1>
+        <aside class="content-filter">
+          <h2 class="filter-title">Фильтр:</h2>
+          <form action="#" class="filter-product" method="get">
+            <fieldset class="filter price-filter">
+              <legend>Цена:</legend>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <label for="min-price"><input type="text" name="min-price" id="min-price"></label>
+                <span class="separator">-</span>
+                <label for="max-price"><input type="text" name="max-price" id="max-price"></label>
+              </div>
+            </fieldset>
+            <fieldset class="filter filter-maker">
+              <legend>Производители:</legend>
+              <input type="checkbox" name="maker" id="check-1">
+              <label for="check-1">Bosch</label>
+              <input type="checkbox" name="maker" id="check-2">
+              <label for="check-2">Интерскол</label>
+              <input type="checkbox" name="maker" id="check-3">
+              <label for="check-3">Makita</label>
+              <input type="checkbox" name="maker" id="check-4">
+              <label for="check-4">Dewalt</label>
+              <input type="checkbox" name="maker" id="check-5">
+              <label for="check-5">Hitachi</label>
+            </fieldset>
+          </form>
+        </aside>
+      </section>
+    </main>
