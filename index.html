@@ -13,30 +13,34 @@
   </head>
   <body>
     <header class="page-header">
-     <div class="header-row-1">
+     <div class="header-row-1 clearfix">
       <div class="container">
         <h1 class="page-title">
           <a href="#" class="index-link">Техномарт</a>
         </h1>
-        <form class="search-form" action="#" method="get">
-          <input class="search-btn ico-search" type="submit">
-          <input  class="search-input" type="search" value="Поиск: ">
-        </form>
-        <a href="bookmarks.html" class="user-bookmarks ico-book">Закладки: <span class="bookmarks-value">0</span></a>
-        <a href="basket.html" class="user-basket ico-basket">Корзина: <span class="basket-value">0</span></a>
+        <div class="search-form icon-search">
+          <form action="#" method="get">
+            <input  class="search-input" type="search" id="search" value="Поиск: ">
+            <label for="search"></label>
+          </form>
+        </div>
+        <a href="bookmarks.html" class="user-bookmarks icon-bookmark">Закладки: <span class="bookmarks-value">0</span></a>
+        <a href="basket.html" class="user-basket icon-basket">Корзина: <span class="basket-value">0</span></a>
         <a href="order.html" class="user-order-btn">Оформить заказ</a>
       </div>
      </div>
      <div class="container">
-      <div class="header-row-2">
-        <h2 class="shop-title">Интернет-магазин строительных материалов и инструментов для ремонта</h2>
+      <div class="header-row-2 clearfix">
+        <div class="shop-title">
+          <p>Интернет-магазин строительных материалов и инструментов для ремонта<p>
+        </div>
         <div class="shop-contact">
-          <a href="tel:812 555 05 05" class="contact-phone ico-phone">+7 (812)555-05-05</a>
+          <a href="tel:812 555 05 05" class="contact-phone icon-phone">+7 (812)555-05-05</a>
           <p class="contact-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <div class="shop-login">
-          <a href="#" class="login ico-login">Войти</a>
-          <a href="#" class="register ico-register">Регистрация</a>
+          <a href="#" class="btn login icon-login">Войти</a>
+          <a href="#" class="btn register">Регистрация</a>
         </div>
         <div class="shop-logged" style="display: none;">
           <a href="#" class="login ico-login logged">Равшан Джамшутович</a>
