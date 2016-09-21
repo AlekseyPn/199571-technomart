@@ -747,7 +747,16 @@ a {
   display: block;
 }
 
+.catalog-item:hover {
+  box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+}
+}
+
 /*====Popular Maker====*/
+.popular-maker {
+  margin-bottom: 65px;
+}
+
 .popular-maker .maker-block {
   font-size: 0;
 }
@@ -767,4 +776,217 @@ a {
   margin-right: 0;
 }
 
-/*====Pop*/
+/*====Service====*/
+.service {
+  margin-bottom: 80px;
+  padding-top: 1px;  
+  background: #f2f6f8;  
+}
+
+.service .service-text{
+   margin-top: 65px;
+   margin-bottom: 25px;
+}
+
+.service-text .service-title {
+  margin-bottom: 35px;
+
+  font-size: 30px;
+  line-height: 24px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.service-text .service-desc {
+  margin-bottom: 15px;
+
+  font-size: 13px;
+  font-family: 'PTsans', sans-serif;
+  line-height: 24px;
+  color: #000;
+}
+
+.features-tab input {
+  display: none;
+}
+
+.service-features .tab-controls {
+  position: relative;
+  float: left;
+  width: 25.5%;
+  padding: 48px 0;
+  margin-right: 80px;
+}
+
+.service-features .tab-controls::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+
+  width: 10px;
+
+  background: url(../img/shadow.png) no-repeat 0 0; 
+}
+
+.tab-controls .tab-toggle {
+  display: block;
+  width: 100%;
+  padding: 15px 22px 16px;
+
+  font-size: 21px;
+  line-height: 30px;  
+
+  background: #32425c;
+  box-shadow: inset 0 -1px 0 #293449;
+} 
+
+.tab-1:checked ~ .tab-controls .toggle-1,
+.tab-2:checked ~ .tab-controls .toggle-2,
+.tab-3:checked ~ .tab-controls .toggle-3 {
+  color: #32425c;
+  background: #fff;
+  box-shadow: none;
+}
+
+ .service-features .features-desc{
+  float: right;
+  width: 65.9%;
+}
+
+.features-desc .desc-block {
+  width: 100%;
+  min-height: 330px;
+  padding: 48px 0 0;  
+}
+
+.desc-block .desc-wrapp {
+  width: 44.3%;
+}
+
+.desc-wrapp .desc-title {
+  margin-bottom: 30px;
+
+  font-size: 36px;
+  line-height: 24px;
+  color: #32425c;
+  text-transform: uppercase;
+}
+
+.desc-wrapp .desc-text {  
+  font-size: 13px;
+  font-family: 'PTsans', sans-serif;
+  line-height: 24px;
+  color: #000;
+}
+
+.desc--credit .desc-text {
+  margin-bottom: 30px;
+}
+
+.desc--guarantee .desc-wrapp {
+  width: 61%;
+}
+
+.desc-wrapp .desc-link {
+  width: 71%;
+}
+
+.desc--deliver {
+  display: none;
+
+  background: url(../img/service-auto.png) no-repeat;
+  background-position: top 72px right 0;
+}
+
+.desc--guarantee{
+  display: none;  
+
+  background: url(../img/service-guarantee.png) no-repeat;
+  background-position: top 48px right 0;  
+}
+
+.desc--credit {
+  display: none;
+
+  background: url(../img/service-credit.png) no-repeat;
+  background-position: top 48px right 0  
+} 
+
+.tab-1:checked ~ .features-desc .desc--deliver,
+.tab-2:checked ~ .features-desc .desc--guarantee,
+.tab-3:checked ~ .features-desc .desc--credit {
+  display: block;
+}
+
+/*====About Company====*/
+.about-comp .company {
+  float: left;
+  width: 55.3%;  
+}
+
+.company-title {
+  margin-bottom: 25px;
+
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.about-comp .company-text {
+  margin-bottom: 25px;
+
+  font-size: 13px;
+  font-family: "PTsans",sans-serif;
+  line-height: 24px;
+  color: #000;
+}
+
+.company .company-text:nth-of-type(2) {
+  margin-bottom: 0;
+}
+
+.company .company-list {
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+  list-style: none;
+}
+
+.company-list li {
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 35px;
+
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.company-list li::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: 25px;
+  height: 2px;
+  margin-top: -2px;
+
+  background: #ee3643;
+}
+
+.company .company-more {
+  width: 42.3%;
+}
+
+.about-comp .company-contact {
+  float: right;
+  width: 32%;
+}
+
+.company-contact .company-text {
+  margin-bottom: 35px;
+}

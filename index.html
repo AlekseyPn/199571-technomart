@@ -63,8 +63,8 @@
       </div>
      </div>
     </header>
-    <main class="container">
-      <section class="page-content">
+    <main class="page-main">
+      <section class="page-content container">
         <article class="content-item sizer-content item_ylw new">
           <p class="item-desc">Материалы</p>
           <a href="#" class="item-btn">На любой вкус</a>
@@ -110,7 +110,7 @@
           <a href="#" class="item-btn">Бесплатно</a>
         </article>
       </section>
-      <section class="popular-good">
+      <section class="popular-good container">
         <div class="popular-header clearfix">
           <h2 class="popular-title">Популярные товары:</h2>
           <a href="#" class="link popular-link">Все популярные товары</a>
@@ -166,7 +166,7 @@
           </article>
         </div>
       </section>
-      <section class="popular-maker">
+      <section class="popular-maker container">
         <div class="popular-header clearfix">
           <h2 class="popular-title">Популярные производители:</h2>
           <a href="#" class="link popular-link">Все производители</a>
@@ -199,57 +199,70 @@
         </div>
       </section>
       <section class="service">
-        <h2 class="service-title">Сервисы</h2>
-        <p class="service-desc">Хороший интернет магазин отличается от плохого не только ценами!<br>Мы стараемся изо всех сил, чтобы ваши покупки были приятными.</p>
-        <div class="service-features">
-          <div class="features-tab">
-            <input type="radio" name="radio-btn" id="tab-1">
-            <input type="radio" name="radio-btn" id="tab-2">
-            <input type="radio" name="radio-btn" id="tab-3">
+        <div class="container">
+          <div class="service-text"> 
+            <h2 class="service-title">Сервисы</h2>
+            <p class="service-desc">Хороший интернет магазин отличается от плохого не только ценами!<br>Мы стараемся изо всех сил, чтобы ваши покупки были приятными.</p>
+          </div>
+          <div class="service-features clearfix">
+            <div class="features-tab">
+              <input class="tab-1" type="radio" name="radio-btn" id="tab-1" checked>
+              <input class="tab-2" type="radio" name="radio-btn" id="tab-2">
+              <input class="tab-3" type="radio" name="radio-btn" id="tab-3">
             <div class="tab-controls">
-              <label for="tab-1" class="tab-toggle">Доставка</label>
-              <label for="tab-2" class="tab-toggle">Гарантия</label>
-              <label for="tab-3" class="tab-toggle">Кредит</label>
+              <label for="tab-1" class="tab-toggle toggle-1">Доставка</label>
+              <label for="tab-2" class="tab-toggle toggle-2">Гарантия</label>
+              <label for="tab-3" class="tab-toggle toggle-3">Кредит</label>
             </div>
             <div class="features-desc">
-              <div class="desc-block">
-                <div class="desc-text-block">
+              <div class="desc-block desc--deliver">
+                <div class="desc-wrapp">
+
                   <h2 class="desc-title">Доставка</h2>
                   <p class="desc-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш на этаж!</p>
+                  
                 </div>
               </div>
-              <div class="desc-block">
-                <div class="desc-text-block">
+              <div class="desc-block desc--guarantee">
+                <div class="desc-wrapp">
+
                   <h2 class="desc-title">Гарантия</h2>
                   <p class="desc-text">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+                  
                 </div>
-              </div>
-              <div class="desc-block">
-                <div class="desc-text-block">
-                  <h2 class="desc-title">Кредит</h2>
-                  <p class="desc-text">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
-                </div>
-              </div>
-            </div>
+               </div>
+               <div class="desc-block desc--credit">
+                 <div class="desc-wrapp">
+
+                   <h2 class="desc-title">Кредит</h2>
+                   <p class="desc-text">Залезть в долговую яму стало проще! 
+Кредитные консультанты придут вам на помощь.</p>
+                   <a class="link desc-link" href="#">Отправить заявку</a>
+
+                 </div>
+               </div>
+             </div>
+           </div>
           </div>
         </div>
       </section>
-      <section class="about-comp">
+      <section class="about-comp container clearfix">
         <div class="company">
           <h2 class="company-title">Компания &laquo;ТЕХНОМАРТ&raquo;</h2>
           <p class="company-text">Настояший мужской шопинг начинаеться здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
           <p class="company-text">Мы можем доставить ваш товар в самые отдаленные точки России!</p>
-          <p class="company-list-title">Техномарт работает со многими транспортными компаниями:</p>
-          <ul>
+          <p class="company-text company-text--title">Техномарт работает со многими транспортными компаниями:</p>
+          <ul class="company-list">
             <li>Деловые линии</li>
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <a href="" class="link company-more-link">Подробнее о компании</a>
+          <a href="" class="link company-more">Подробнее о компании</a>
         </div>
         <div class="company-contact">
           <h2 class="company-title">Контакты</h2>
-          <p class="company-text"></p>
+          <p class="company-text">Вы можете забрать товар сами, 
+заехав в наш офис:</p>
           <div class="company-maps"><img src="img/img-map.png" alt="Местоположение Техномарта"></div>
           <a href="#" class="contact-link">Заблудились? Напишите нам</a>
         </div>
