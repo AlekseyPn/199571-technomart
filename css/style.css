@@ -244,6 +244,18 @@ ul {
   line-height: 18px;
 }
 
+.header-user-order .basket-fill {
+  background: #ee3643;
+}
+
+.header-user-order .basket-fill:hover {
+  background: #ca2c37;
+}
+
+.header-user-order .basket-fill:active {
+  background: #ba2732;
+}
+
 .header-user-order .user-order-btn {
   background: #63a63e;
 }
@@ -789,6 +801,17 @@ ul {
   margin-right: 0;
 }
 
+.maker-block .maker-link:hover {
+  box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.maker-block .maker-link:active {
+  box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);  
+}
+
+.maker-block .maker-link:active img {
+  opacity: 0.3;
+}
 /*====Service====*/
 .service {
   margin-bottom: 80px;
@@ -1049,6 +1072,7 @@ ul {
 
   font-size: 30px;
   line-height: 30px;
+  text-transform: uppercase;
 }
 
 .footer-menu .menu-title:hover {
@@ -1242,11 +1266,28 @@ ul {
 .shop-logged .logged-link {
   display: inline-block;
   vertical-align: top;
-  margin-top: 10px;
+  margin-top: 10px;    
 
   font-size: 16px;
   color: #32425c;
   text-decoration: underline;
+  text-align: center;
+}
+
+.shop-logged .dotted {
+  width: 12px;
+  height: 12px;
+  margin-top: 13px;
+  margin-right: 10px;
+
+  background: #32425c;
+  border-radius: 50%;
+  border: 4px solid #f2f6f8;  
+} 
+
+.order {
+  margin-left: 20px;
+  margin-right: 15px;
 }
 
 .breadcrumb {
@@ -1377,7 +1418,7 @@ ul {
 
   border: 8px solid #fff;
   border-radius: 50%;
-  background-color: #f7f3ec;
+  background-color: #ababab;
   cursor: pointer;
 }
 
@@ -1664,3 +1705,158 @@ ul {
   font-size: 13px;  
   font-family: 'PTsans', sans-serif;
 }
+
+.modal-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: none;  
+
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.5)
+}
+
+.modal-overlay-show {
+  display: block;
+}
+
+.modal-content {
+  position: absolute;
+  top: 420px;
+  left: 50%;
+  z-index: 20;
+
+  display: none;
+  width: 620px;
+  margin-left: -310px;
+
+  background: #fff;
+  box-shadow: 0 20px 40px 0 rgba(41, 52, 73, 0.75);
+  border-top: 7px solid #ee3643;
+}
+
+.modal-content--show {
+  display: block;
+}
+
+
+.modal-content--close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+
+  width: 25px;
+  height: 25px;
+  padding: 0;
+
+  font-size: 0;
+
+  background: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.modal-content--close::before,
+.modal-content--close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+
+  width: 25px;
+  height: 5px;
+
+  background: #ee3643;
+}
+
+.modal-content--close::before {
+  transform: rotate(-45deg);
+}
+
+.modal-content--close::after {
+  transform: rotate(45deg);
+}
+
+.modal-content--catalog .modal-catalog__text {
+  width: 100%;
+  padding: 50px 0;
+  padding-left: 100px;  
+}
+
+.modal-catalog__text p {
+  position: relative;  
+
+  font-size: 30px;
+  line-height: 65px;
+  color: #000;
+  text-align: center;
+}
+
+.modal-catalog__text p::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 65px;
+  height: 65px;
+
+  border-radius: 50%;
+  background: #63a63e url(../img/modal-check.png) no-repeat center center;
+}
+
+.modal-content__button {
+  width: 100%;
+  padding: 37px 80px;
+
+  font-size: 0;
+
+  background: #f7f3ec; 
+}
+
+.modal-content__button .modal-catalog__btn,
+.modal-content__button .modal-content__btn {
+  display: inline-block;
+  width: 47.8%;
+  margin-right: 20px;
+  padding: 10px 0;  
+
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+
+  background: #ee3643;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+}
+
+.modal-content__button .modal-catalog__btn:nth-child(2n) {
+  margin-right: 0;
+}
+
+.modal-catalog__btn:hover,
+.modal-content__btn:hover {
+  background: #ca2c37;
+}
+
+.modal-catalog__btn:active,
+.modal-content__btn:active {
+  background: #ba2732;
+}
+
+.modal-content__button .modal-catalog__btn--close {
+  color: #000;
+  background: #fff;  
+  cursor: pointer;  
+}
+
+.modal-content__button .modal-catalog__btn--close:hover,
+.modal-content__button .modal-catalog__btn--close:active {
+  outline: 2px solid #000; 
+} 

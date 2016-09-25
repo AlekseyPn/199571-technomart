@@ -25,7 +25,7 @@
           </form>
         </div>
         <a href="bookmarks.html" class="user-bookmarks icon-bookmark">Закладки: <span class="bookmarks-value">0</span></a>
-        <a href="basket.html" class="user-basket icon-basket">Корзина: <span class="basket-value">0</span></a>        <a href="order.html" class="user-order-btn">Оформить заказ</a>
+        <a href="basket.html" class="user-basket icon-basket basket-fill">Корзина: <span class="basket-value">10</span></a>        <a href="order.html" class="user-order-btn">Оформить заказ</a>
       </div>
      </div>
      <div class="container">
@@ -254,7 +254,7 @@
     <section class="footer-menu clearfix">
       <div class="container">
         <div class="menu-title">
-          <a href="#" class="menu-link index-link">Техномарт</a>
+          <a href="index.html" class="menu-link index-link">Техномарт</a>
         </div>
         <ul class="footer-list">
           <li><a href="#">Компания</a></li>
@@ -290,15 +290,16 @@
         </div>
       </div>      
     </footer>
-    <div class="modal-catalog">
-       <button class="modal-catalog--close" type="button">Закрыть</button>
+    <div class="modal-content modal-content--catalog">
+       <button class="modal-content--close" type="button">Закрыть</button>
        <div class="modal-catalog__text">
         <p>Товар добавлен в корзину!</p>
        </div>
-       <div class="modal-catalog__button">
-         <a href="make_order.html" class="modal-catalog__order btn">Оформить заказ</button>
-         <button class="modal-catalog__close btn" type="button">Продолжить покупки</button>
+       <div class="modal-content__button">
+         <a href="make_order.html" class="modal-catalog__btn">Оформить заказ</a>
+         <button class="modal-catalog__btn modal-catalog__btn--close " type="button">Продолжить покупки</button>
       </div> 
     </div>
+    <div class="modal-overlay"></div>
   </body>
 </html>
