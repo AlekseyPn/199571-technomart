@@ -18,7 +18,7 @@ for (i = 0; i < openModal.length; i++) {
         overlay.classList.add("modal-overlay--show");
         popup.scrollIntoView(top);
         userName.focus();
-        
+
     });
 }
 
