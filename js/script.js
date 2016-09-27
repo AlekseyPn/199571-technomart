@@ -7,7 +7,7 @@ var close = document.querySelectorAll(".item-close");
 var mapPopup = document.querySelector(".modal-content__map");
 var openMap = document.querySelector(".map");
 var userName = document.querySelector("[name='name']");
-var btnSlide = document.querySelectorAll("#btn-slide");
+var btnSlide = document.querySelectorAll(".btn-slide");
 var slide = document.querySelectorAll(".slide");
 var currentSlide = 0;
 
@@ -16,7 +16,9 @@ for (i = 0; i < openModal.length; i++) {
         event.preventDefault();
         popup.classList.add("modal-content--show");
         overlay.classList.add("modal-overlay--show");
+        popup.scrollIntoView(top);
         userName.focus();
+        
     });
 }
 
